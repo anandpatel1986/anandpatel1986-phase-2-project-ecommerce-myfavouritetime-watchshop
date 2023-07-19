@@ -9,7 +9,7 @@ import AddNewProduct from "./components/addNewProduct/AddNewProduct";
 function App() {
   return (
     <>
-      <NavBar />
+      <NavBar cartItemCount={2} />
       <Switch>
         <Route exact path="/">
           <Products />

@@ -1,16 +1,8 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-function NavBar({ onSearch, cartItemCount }) {
-  const [search, setSearch] = useState("");
-  function handleSubmit() {
-    if (search.trim().length) {
-      onSearch(search.trim());
-    }
-    setSearch("");
-  }
-
+function NavBar({ cartItemCount }) {
   return (
     <div className="navbar">
       <header>
@@ -18,19 +10,6 @@ function NavBar({ onSearch, cartItemCount }) {
           <Link to="/">
             <h1>My Favourite Time</h1>
           </Link>
-          <div className="searchBar">
-            <form>
-              <input
-                type="text"
-                placeholder="search products"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-              />
-              <button type="button" className="search-btn" onSubmit={handleSubmit}>
-                Search
-              </button>
-            </form>
-          </div>
           <div className="addNewProduct">
             <Link to="/addnewproduct">Add New Product</Link>
           </div>
