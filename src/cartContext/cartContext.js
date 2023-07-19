@@ -21,6 +21,15 @@ const CartProvider = ({ children }) => {
   const cartItemCount = () => {
     return cart.reduce((acc, item) => acc + item.quantity, 0);
   };
+
+  const addToCart = (product) => {
+    const productIndex = cart.findIndex((item) => item.product.id === product.id);
+    if (productIndex !== -1) {
+      increaseQuantity(product.id);
+    } else {
+      setCart([...cart, { product, quantity: 1 }]);
+    }
+  };
 };
 
 // useContext in children component of App
