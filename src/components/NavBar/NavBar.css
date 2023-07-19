@@ -4,4 +4,16 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  background-color: aliceblue;
+}
+
+img {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  justify-self: end;
+}
+
+.cartCounter {
+  position: absolute;
 }
