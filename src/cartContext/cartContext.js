@@ -1,8 +1,6 @@
 import { createContext, useContext, useState } from "react";
 
 // create context
-// wrapping App in context Provider
-// useContext in component
 
 const initialState = {
   cart: [],
@@ -15,3 +13,14 @@ const initialState = {
 
 const CartContext = createContext(initialState);
 useCart = () => useContext(CartContext);
+
+//  context Provider
+const CartProvider = ({ children }) => {
+  const [cart, setCart] = useState(initialState.cart);
+
+  const cartItemCount = () => {
+    return cart.reduce((acc, item) => acc + item.quantity, 0);
+  };
+};
+
+// useContext in children component of App
