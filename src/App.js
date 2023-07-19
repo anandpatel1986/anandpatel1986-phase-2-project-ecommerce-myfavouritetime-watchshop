@@ -11,7 +11,7 @@ function App() {
   const { cartItemCount } = useCart();
   return (
     <>
-      <NavBar cartItemCount={cartItemCount} />
+      <NavBar cartItemCount={cartItemCount()} />
       <Switch>
         <Route exact path="/">
           <Products />
