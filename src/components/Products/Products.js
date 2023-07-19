@@ -1,20 +1,8 @@
-import { React, useState, useEffect } from "react";
+import React from "react";
 import Item from "../Item/Item";
 import { useCart } from "../../cartContext/cartContext";
-function Products() {
-  const [loading, setLoading] = useState(true);
-  const [products, setProducts] = useState([]);
+function Products({ loading, products }) {
   const { addToCart } = useCart();
-
-  useEffect(() => {
-    fetch("http://localhost:3333/products")
-      .then((r) => r.json())
-      .then((products) => {
-        setLoading(true);
-        setProducts(products);
-        setLoading(false);
-      });
-  }, []);
 
   return (
     <div className="products">
