@@ -12,7 +12,7 @@ const initialState = {
 };
 
 const CartContext = createContext(initialState);
-useCart = () => useContext(CartContext);
+const useCart = () => useContext(CartContext);
 
 //  context Provider
 const CartProvider = ({ children }) => {

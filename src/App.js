@@ -5,11 +5,13 @@ import Product from "./components/Product/Product";
 import Cart from "./components/Cart/Cart";
 import { Switch, Route } from "react-router-dom";
 import AddNewProduct from "./components/addNewProduct/AddNewProduct";
+import { useCart } from "./cartContext/cartContext";
 
 function App() {
+  const { cartItemCount } = useCart();
   return (
     <>
-      <NavBar cartItemCount={2} />
+      <NavBar cartItemCount={cartItemCount} />
       <Switch>
         <Route exact path="/">
           <Products />
