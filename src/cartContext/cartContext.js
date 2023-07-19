@@ -41,9 +41,9 @@ const CartProvider = ({ children }) => {
 
   const decreaseQuantity = (productId) => {
     const copy = cart.slice();
-    const productIdx = copy.findIndex((item) => item.product.id === productId);
-    if (productIdx !== -1 && copy[productIdx].quantity > 1) {
-      copy[productIdx].quantity -= 1;
+    const productIndex = copy.findIndex((item) => item.product.id === productId);
+    if (productIndex !== -1 && copy[productIndex].quantity > 1) {
+      copy[productIndex].quantity -= 1;
       setCart(copy);
     }
   };
@@ -51,6 +51,16 @@ const CartProvider = ({ children }) => {
   const removeFromCart = (productId) => {
     setCart(cart.filter((item) => item.product.id !== productId));
   };
+
+  return (
+    <CartContext.Provider
+      value={{ cart, cartItemCount, addToCart, removeFromCart, increaseQuantity, decreaseQuantity }}
+    >
+      {children}
+    </CartContext.Provider>
+  );
 };
+
+export { useCart, CartProvider };
 
 // useContext in children component of App
