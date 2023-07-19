@@ -4,6 +4,7 @@ import Products from "./components/Products/Products";
 import Product from "./components/Product/Product";
 import Cart from "./components/Cart/Cart";
 import { Switch, Route } from "react-router-dom";
+import AddNewProduct from "./components/addNewProduct/AddNewProduct";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         </Route>
         <Route path="/product/:productId">
           <Product />
+        </Route>
+        <Route path="/addnewproduct">
+          <AddNewProduct />
         </Route>
         <Route path="/cart">
           <Cart />
