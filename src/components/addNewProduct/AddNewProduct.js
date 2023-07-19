@@ -6,7 +6,7 @@ function AddNewProduct({ products, setProducts }) {
   const [name, setName] = useState("");
   const [desc, setDesc] = useState("");
   const [image, setImage] = useState("");
-  const [price, setPrice] = useState(0);
+  const [price, setPrice] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -14,7 +14,7 @@ function AddNewProduct({ products, setProducts }) {
       name: name,
       description: desc,
       image: image,
-      price: price,
+      price: parseFloat(price),
     };
 
     fetch("http://localhost:3333/products", {

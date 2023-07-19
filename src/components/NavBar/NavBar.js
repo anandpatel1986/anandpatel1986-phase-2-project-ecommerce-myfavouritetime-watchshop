@@ -15,7 +15,7 @@ function NavBar({ cartItemCount }) {
           </div>
           <div>
             <Link to="/cart">
-              <img src="/Shopping_cart_icon.svg.png" alt="cart" />
+              <img id="cartLogo" src="/Shopping_cart_icon.svg.png" alt="cart" />
               {cartItemCount > 0 && <div className="cartCounter">{cartItemCount}</div>}
             </Link>
           </div>

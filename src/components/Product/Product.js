@@ -1,6 +1,7 @@
 import { React, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useCart } from "../../cartContext/cartContext";
+import "./Product.css";
 
 function Product() {
   const [loading, setLoading] = useState(true);
@@ -23,11 +24,11 @@ function Product() {
         <div className={"loader"}></div>
       ) : (
         <div className="productDetails">
-          <img src="product.image" alt="" />
+          <img src={product.image} alt="" />
           <div className="info">
             <h3>{product.name}</h3>
             <p>{product.description}</p>
-            <span className="price">{product.price}</span>
+            <span className="price">$ {product.price}</span>
             <button className="addToCart-btn" onClick={() => addToCart(product)}>
               Add to Cart
             </button>
