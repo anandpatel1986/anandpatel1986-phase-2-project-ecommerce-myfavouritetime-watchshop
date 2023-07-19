@@ -1,17 +1,17 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import ProductList from "./components/ProductList";
-import ProductDetail from "./components/ProductDetail";
-import Cart from "./components/Cart";
+import NavBar from "./components/NavBar/NavBar";
+import Products from "./components/Products/Products";
+import Product from "./components/Product/Product";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <ProductList />
-      <ProductDetail />
+    <>
+      <NavBar />
+      <Products />
+      <Product />
       <Cart />
-    </div>
+    </>
   );
 }
 
