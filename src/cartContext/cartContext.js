@@ -38,6 +38,19 @@ const CartProvider = ({ children }) => {
       setCart(copy);
     }
   };
+
+  const decreaseQuantity = (productId) => {
+    const copy = cart.slice();
+    const productIdx = copy.findIndex((item) => item.product.id === productId);
+    if (productIdx !== -1 && copy[productIdx].quantity > 1) {
+      copy[productIdx].quantity -= 1;
+      setCart(copy);
+    }
+  };
+
+  const removeFromCart = (productId) => {
+    setCart(cart.filter((item) => item.product.id !== productId));
+  };
 };
 
 // useContext in children component of App
