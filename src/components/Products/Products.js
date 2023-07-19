@@ -1,9 +1,10 @@
 import { React, useState, useEffect } from "react";
 import Item from "../Item/Item";
-
+import { useCart } from "../../cartContext/cartContext";
 function Products() {
   const [loading, setLoading] = useState(true);
   const [products, setProducts] = useState([]);
+  const { addToCart } = useCart();
 
   useEffect(() => {
     fetch("http://localhost:3333/products")
@@ -21,7 +22,7 @@ function Products() {
         <div className="loader" />
       ) : (
         products.map((product) => {
-          return <Item key={product.id} data={product} addToCart={() => {}} />;
+          return <Item key={product.id} data={product} addToCart={() => addToCart(product)} />;
         })
       )}
     </div>
