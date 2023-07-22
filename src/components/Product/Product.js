@@ -9,7 +9,7 @@ function Product() {
   const { productId } = useParams();
   const { addToCart } = useCart();
   useEffect(() => {
-    fetch(`http://localhost:3333/products/${productId}`)
+    fetch(`https://backend-myfavouritetime.onrender.com/products/${productId}`)
       .then((r) => r.json())
       .then((product) => {
         setLoading(true);

@@ -13,7 +13,7 @@ function App() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:3333/products")
+    fetch("https://backend-myfavouritetime.onrender.com/products")
       .then((r) => r.json())
       .then((products) => {
         setLoading(true);

@@ -18,25 +18,29 @@ function Cart() {
             <h2>Order Summary</h2>
             {cart.map((item) => (
               <div className="item" key={item.product.id}>
-                <img src={item.product.image} alt="" />
-                <div className="itemDesc">
-                  <Link to={"product/" + item.product.id}>{item.product.name}</Link>
-                </div>
-                <span className="price">$ {item.product.price * item.quantity}</span>
-                <div>
-                  <button className="addQty" onClick={() => increaseQuantity(item.product.id)}>
-                    +
-                  </button>
-                  <span>{item.quantity}</span>
-                  <button
-                    onClick={() => decreaseQuantity(item.product.id)}
-                    disabled={item.quantity === 1}
-                    className="removeQty"
-                  >
-                    -
-                  </button>
-                  <div className="remove" onClick={() => removeFromCart(item.product.id)}>
-                    Remove
+                <div className="grid">
+                  <img src={item.product.image} alt="" />
+                  <div>
+                    <div className="itemDesc">
+                      <Link to={"product/" + item.product.id}>{item.product.name}</Link>
+                    </div>
+                    <span className="price">Price: $ {item.product.price * item.quantity}</span>
+                  </div>
+                  <div className="editQty">
+                    <button className="addQty" onClick={() => increaseQuantity(item.product.id)}>
+                      +
+                    </button>
+                    <span> {item.quantity} </span>
+                    <button
+                      onClick={() => decreaseQuantity(item.product.id)}
+                      disabled={item.quantity === 1}
+                      className="removeQty"
+                    >
+                      -
+                    </button>
+                    <div className="remove" onClick={() => removeFromCart(item.product.id)}>
+                      Remove
+                    </div>
                   </div>
                 </div>
               </div>
@@ -58,5 +62,4 @@ function Cart() {
     </div>
   );
 }
-
 export default Cart;

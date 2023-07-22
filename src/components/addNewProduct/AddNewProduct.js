@@ -18,7 +18,7 @@ function AddNewProduct({ products, setProducts }) {
       price: parseFloat(price),
     };
 
-    fetch("http://localhost:3333/products", {
+    fetch("https://backend-myfavouritetime.onrender.com/products", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
