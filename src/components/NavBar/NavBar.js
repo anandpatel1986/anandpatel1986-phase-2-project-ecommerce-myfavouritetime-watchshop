@@ -7,15 +7,17 @@ function NavBar({ cartItemCount }) {
     <div className="navbar">
       <header>
         <div className="header">
-          <Link to="/">
+          <Link to="/" className="link">
             <h1>My Favourite Time</h1>
           </Link>
           <div className="addNewProduct">
-            <Link to="/addnewproduct">Add New Product</Link>
+            <Link to="/addnewproduct" className="link">
+              Add New Product
+            </Link>
           </div>
           <div>
-            <Link to="/cart">
-              <img id="cartLogo" src="/Shopping_cart_icon.svg.png" alt="cart" />
+            <Link to="/cart" className="link headerCart">
+              <img className="cartImg" src="/Shopping_cart_icon.svg.png" alt="cart" />
               {cartItemCount > 0 && <div className="cartCounter">{cartItemCount}</div>}
             </Link>
           </div>

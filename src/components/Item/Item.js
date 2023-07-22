@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Item.css";
 
 function Item({ data, addToCart }) {
   const { id, name, image, price } = data;
@@ -9,7 +10,7 @@ function Item({ data, addToCart }) {
       <Link to={`product/${id}`} className="itemName">
         {name}
       </Link>
-      <div>
+      <div className="flex">
         <span className="price">$ {price}</span>
         <button className="addToCart-btn" onClick={addToCart}>
           Add to Cart

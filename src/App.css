@@ -1,4 +1,10 @@
-img {
+.app {
+  background-color: white;
+  max-width: 100vw;
+  font-family: cursive;
+}
+
+/* img {
   height: 150px;
   width: 150px;
-}
+} */

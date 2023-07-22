@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import { useHistory } from "react-router-dom";
+import "./AddNewProduct.css";
 
 function AddNewProduct({ products, setProducts }) {
   const history = useHistory();
@@ -33,24 +34,19 @@ function AddNewProduct({ products, setProducts }) {
 
   return (
     <form className="addProduct" onSubmit={handleSubmit}>
-      <label>
-        Product Name: <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Description: <input type="text" name="name" value={desc} onChange={(e) => setDesc(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Image URL: <input type="text" name="name" value={image} onChange={(e) => setImage(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Price: <input type="text" name="name" value={price} onChange={(e) => setPrice(e.target.value)} />
-      </label>
-      <br />
+      <label htmlFor="pName">Product Name: </label>
+      <input type="text" id="pName" name="name" value={name} onChange={(e) => setName(e.target.value)} />
 
-      <button type="submit">Submit</button>
+      <label htmlFor="pDesc">Description: </label>
+      <input type="text" id="pDesc" name="name" value={desc} onChange={(e) => setDesc(e.target.value)} />
+
+      <label htmlFor="pURL">Image URL: </label>
+      <input type="text" id="pURL" name="name" value={image} onChange={(e) => setImage(e.target.value)} />
+
+      <label htmlFor="pPrice">Price: </label>
+      <input type="text" id="pPrice" name="name" value={price} onChange={(e) => setPrice(e.target.value)} />
+
+      <input type="submit" value="Submit" />
     </form>
   );
 }

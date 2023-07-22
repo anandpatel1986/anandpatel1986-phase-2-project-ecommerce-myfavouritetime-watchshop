@@ -1,0 +1,12 @@
+.products {
+  margin: 10px;
+  display: grid;
+  justify-self: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  grid-row: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 95%;
+  height: 100%;
+}

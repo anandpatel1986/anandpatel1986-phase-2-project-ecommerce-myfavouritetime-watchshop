@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../../cartContext/cartContext";
+import "./Cart.css";
 
 function Cart() {
   const { cart, removeFromCart, increaseQuantity, decreaseQuantity } = useCart();
@@ -12,7 +13,7 @@ function Cart() {
   return (
     <div className="cartContainer">
       {cart.length >= 1 ? (
-        <div>
+        <div className="grid">
           <div className="cartItem">
             <h2>Order Summary</h2>
             {cart.map((item) => (

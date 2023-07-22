@@ -1,0 +1,64 @@
+.card {
+  padding: 20px;
+  height: auto;
+  width: auto;
+
+  box-shadow: rgb(138, 157, 158) 5px 15px 15px 5px;
+  border-radius: 20px;
+  background-color: white;
+  transform: translateY(0px);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card:hover {
+  box-shadow: lightgrey 5px 15px 15px 5px;
+  transform: translateY(-5px);
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1 / span 2;
+  margin: 5px 30px;
+}
+.card img {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
+
+.itemName {
+  height: inherit;
+  overflow: hidden;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+.itemName:hover {
+  color: green;
+  text-decoration: underline;
+}
+.price {
+  color: green;
+  font-weight: bold;
+}
+
+.addToCart-btn {
+  color: green;
+  background-color: rgb(212, 232, 222);
+  font-size: large;
+  border: solid 2px #fff;
+  padding: 0 10px;
+  border-radius: 10px;
+  font-family: cursive;
+}
+
+.addToCart-btn:hover {
+  background-color: rgb(18, 78, 48);
+  color: white;
+  cursor: pointer;
+}

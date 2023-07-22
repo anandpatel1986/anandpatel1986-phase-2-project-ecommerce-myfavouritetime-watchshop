@@ -1,0 +1,38 @@
+.error {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgb(138, 157, 158) 5px 15px 15px 5px;
+  padding: 20px 20px;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: green;
+}
+
+.cartContainer {
+  width: 100%;
+  height: auto;
+}
+
+.cartContainer .grid {
+  position: relative;
+  grid-template-columns: 2fr 1fr;
+}
+.cartItem {
+  background-color: white;
+  border-radius: 10px;
+}
+.item img {
+  width: 100px;
+  height: auto;
+}
+
+.item {
+  border-bottom: solid 1px #f2f2f3;
+  grid-template-columns: 1fr 2fr 1fr;
+}

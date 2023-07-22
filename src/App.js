@@ -6,6 +6,7 @@ import Cart from "./components/Cart/Cart";
 import { Switch, Route } from "react-router-dom";
 import AddNewProduct from "./components/addNewProduct/AddNewProduct";
 import { useCart } from "./cartContext/cartContext";
+import "./App.css";
 
 function App() {
   const { cartItemCount } = useCart();
@@ -22,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="app">
       <NavBar cartItemCount={cartItemCount()} />
       <Switch>
         <Route exact path="/">
@@ -41,7 +42,7 @@ function App() {
           <h1>Not Found</h1>
         </Route>
       </Switch>
-    </>
+    </div>
   );
 }
 

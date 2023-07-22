@@ -1,6 +1,8 @@
 import React from "react";
 import Item from "../Item/Item";
 import { useCart } from "../../cartContext/cartContext";
+import "./Products.css";
+
 function Products({ loading, products }) {
   const { addToCart } = useCart();
 
