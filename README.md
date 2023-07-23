@@ -4,7 +4,7 @@ Welcome to My Favourite Time!!
 
 ## Description
 
-This is a single page ecommerce application for wrist watches made using React, JavaScript library. User can view all Products when page initially loads. Use can view Product details when click on product name. User can add items to cart from home page and also from product detail page. User can view items added to cart by clicking shopping cart icon. Quantity can be edited from cart also. and user can remove items from cart. New watch can be added to Product list using Add New Product form.
+This is a single page ecommerce application for wrist watches made using React, JavaScript library. User can view all Products when page initially loads. User can view Product details when click on product name. User can add items to cart from home page and also from product detail page. User can view items added to cart by clicking shopping cart icon. Quantity can be edited from cart also. and user can remove items from cart. New watch can be added to Product list using Add New Product form.
 
 ## Installation
 
@@ -16,7 +16,7 @@ Back-end is deployed on render.com :https://backend-myfavouritetime.onrender.com
 
 In order to access this project, please fork your own version in the top right of the GitHub Repository. Once you've forked a copy, please clone the repository to your own directory.
 
-After cloning the front-end repo, navigate into the folder and run
+After cloning the front-end repo, navigate into the folder and run :
 
 ```bash
 npm install
