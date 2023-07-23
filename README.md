@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# phase-2-project-ecommerce-myfavouritetime-watchshop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to My Favourite Time!!
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This is a single page ecommerce application for wrist watches made using React, JavaScript library. User can view all Products when page initially loads. Use can view Product details when click on product name. User can add items to cart from home page and also from product detail page. User can view items added to cart by clicking shopping cart icon. Quantity can be edited from cart also. and user can remove items from cart. New watch can be added to Product list using Add New Product form.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Github Front-end repo: https://github.com/anandpatel1986/phase-2-project-ecommerce-myfavouritetime-watchshop
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Github Back-end repo:https://github.com/anandpatel1986/phase-2-project-json-server-myfavouritetime
 
-### `npm test`
+Back-end is deployed on render.com :https://backend-myfavouritetime.onrender.com
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In order to access this project, please fork your own version in the top right of the GitHub Repository. Once you've forked a copy, please clone the repository to your own directory.
 
-### `npm run build`
+After cloning the front-end repo, navigate into the folder and run
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+to install necessary dependancies and then run :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+to launch the Project on your localhost.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Note that back-end for this Project is deployed on free version of render.com so it will take few time to render products when page is initially loads.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Visuals
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+You find video walkthrough on youtube:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[![My Favourite Time](https://i9.ytimg.com/vi_webp/t305FdwBtHg/mq3.webp?sqp=COi99aUG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYACqAWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCWaLLEHjUP7rMUOQhLOf7ghkN9Aw)](https://youtu.be/t305FdwBtHg)
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Roadmap
 
-### Code Splitting
+More features will be added in future like signup, login page, checkout and payment processing, order confirmation page etc.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+MIT License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Copyright (c) 2023 anandpatel1986
 
-### Making a Progressive Web App
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

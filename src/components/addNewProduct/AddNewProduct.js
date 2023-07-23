@@ -31,7 +31,6 @@ function AddNewProduct({ products, setProducts }) {
         history.push("/");
       });
   }
-  console.log(desc);
 
   return (
     <form className="addProduct" onSubmit={handleSubmit}>
